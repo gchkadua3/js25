@@ -1,9 +1,12 @@
 var massive = [];
 
       function addToMassive() {
-        var inputElement = document.getElementById("inputNumber");
+        var inputElement = document.getElementById('inputNumber');
         var inputValue = Number(inputElement.value);
+        var result = document.getElementById ('result');
         
         massive.push(inputValue);
-        document.write(massive);
-      }
+        result.textContent = massive;
+        
+
+      } 
